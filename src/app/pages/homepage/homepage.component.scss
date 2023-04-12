@@ -1,0 +1,131 @@
+.main_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    width: 40vw;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+    font-family: "Arvo", serif;
+    color: rgb(14 62 15);
+  }
+  .light_green {
+    color: rgb(124 181 71);
+  }
+
+  p {
+    color: rgb(14 62 15/0.7);
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .side_images {
+    width: 60vw;
+    position: relative;
+    .main_img {
+      width: 80%;
+      margin: auto;
+      margin-top: 9rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 4;
+    }
+    .upper_img {
+      position: absolute;
+      top: 6rem;
+      right: 6rem;
+      width: 18rem;
+    }
+    .lower_img {
+      position: absolute;
+      bottom: -1.5rem;
+      left: 6rem;
+      width: 10rem;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: none;
+  font-family: "Arvo", serif;
+  font-size: 1.1rem;
+  margin: 1rem;
+  margin-top: 1.5rem;
+}
+.btn:hover {
+  background: rgb(124 181 71);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.second_section {
+  position: relative;
+  background-color: rgb(14 62 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  h1 {
+    color: white;
+  }
+  .light_green {
+    color: rgb(124 181 71);
+  }
+
+  p {
+    color: white;
+    margin-right: 4rem;
+    line-height: normal;
+  }
+  .btn {
+    background-color: rgb(124 181 71);
+    color: white;
+  }
+
+  .side_img {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img {
+      width: 70%;
+    }
+  }
+  .context {
+    width: 50vw;
+    height: 100%;
+
+    .left_img {
+      position: absolute;
+      //bottom: 1rem;
+      left: 50%;
+
+      width: 25rem;
+    }
+    .right_img {
+      position: absolute;
+      bottom: -2.5rem;
+      right: -2.5rem;
+      transform: rotate(-25deg);
+
+      width: 15rem;
+    }
+  }
+  .full-img {
+    width: 100vw;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+    }
+  }
+}
