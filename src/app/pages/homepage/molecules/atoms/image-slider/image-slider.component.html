@@ -1,0 +1,36 @@
+<!-- <div class="container">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img
+        id="slide-1"
+        src="https://copiana.com/wp-content/themes/copianacom/public/images/home/events/terminus-community-gallery.jpg"
+        alt=""
+      />
+      <img
+        id="slide-2"
+        src="https://copiana.com/wp-content/themes/copianacom/public/images/home/events/royal-center-community-gallery.jpg"
+        alt=""
+      />
+    </div>
+    <div class="slider-nav">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+    </div>
+  </div>
+</div> -->
+<div
+  style="width: 840px; height: 500px; text-align: center; margin: 0; padding: 0"
+>
+  <ng-image-slider
+    class="slider"
+    #nav
+    [images]="imageObject"
+    [infinite]="true"
+    [autoSlide]="1"
+    [imageSize]="{ width: '25%', height: 200 }"
+    slideImage="1"
+    [showArrow]="false"
+    [imagePopup]="false"
+    slideActiveClass="swiper-active"
+  ></ng-image-slider>
+</div>
