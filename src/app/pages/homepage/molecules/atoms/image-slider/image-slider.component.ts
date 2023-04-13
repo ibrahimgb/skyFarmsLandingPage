@@ -10,16 +10,30 @@ export class ImageSliderComponent {
   imageObject = [
     {
       image:
-        'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg',
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/terminus-community-gallery.jpg',
       thumbImage:
-        'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg',
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/terminus-community-gallery.jpg',
       title: 'Hummingbirds are amazing creatures',
     },
     {
       image:
-        'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/royal-center-community-gallery.jpg',
       thumbImage:
-        'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/royal-center-community-gallery.jpg',
+      title: 'Example two with title.',
+    },
+    {
+      image:
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/terminus-community-gallery.jpg',
+      thumbImage:
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/terminus-community-gallery.jpg',
+      title: 'Hummingbirds are amazing creatures',
+    },
+    {
+      image:
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/royal-center-community-gallery.jpg',
+      thumbImage:
+        'https://copiana.com/wp-content/themes/copianacom/public/images/home/events/royal-center-community-gallery.jpg',
       title: 'Example two with title.',
     },
   ];
