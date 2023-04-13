@@ -1,0 +1,82 @@
+.flex_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //width: min(70vw, 100%);
+  margin: 0;
+  margin-top: 4rem;
+  .card {
+    padding: 2rem;
+    padding-right: 0;
+    background-color: aliceblue;
+    border-radius: 15px 0 0 15px;
+  }
+  img {
+    height: 30rem;
+  }
+}
+.main {
+  width: min(70vw, 100%);
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.info_card {
+  background-color: rgb(14 62 15);
+  border-radius: 15px;
+  padding: 3rem;
+  margin: 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h1,
+  p {
+    color: white;
+    max-width: 80%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-family: "Arvo", serif;
+  color: rgb(14 62 15);
+  margin-bottom: 0;
+  padding-right: 1rem;
+}
+.tag {
+  color: rgb(124 181 71);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: rgb(14 62 15/0.7);
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  width: 13rem;
+  border: none;
+  font-family: "Arvo", serif;
+  font-size: 1.1rem;
+  margin: 1rem;
+  margin-top: 1.5rem;
+
+  background-color: ghostwhite;
+}
+.btn:hover {
+  background: rgb(124 181 71);
+  color: white;
+  transition: all 0.5s ease;
+}
