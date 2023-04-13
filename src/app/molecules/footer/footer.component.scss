@@ -4,7 +4,7 @@ $dark: #1e1e1e;
 $gray: rgba(1, 1, 1, 0.6);
 $lite: rgba(255, 255, 255, 0.6);
 $primary: #002347;
-$secondary: #fdc632;
+$secondary: #000000;
 $main: rgb(14 62 15);
 
 /***************************
@@ -264,6 +264,8 @@ a:hover {
 .border-r {
   input {
     border-radius: 50px 0 0 50px;
+    color: white;
+    font-size: 1rem;
   }
   button {
     border-radius: 0 50px 50px 0 !important;

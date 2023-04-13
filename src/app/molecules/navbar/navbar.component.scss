@@ -6,6 +6,7 @@ $white: rgb(253, 253, 253);
 $black: rgb(38, 38, 38);
 $light-black: rgba(80, 80, 80, 0.201);
 $grey: rgba(80, 80, 80, 0.744);
+$secondary: rgb(51, 79, 108);
 
 * {
   font-family: "Manrope", sans-serif !important;
@@ -101,7 +102,7 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: $black;
+  background-color: $secondary;
   color: $white;
   margin-left: 8px;
 }
