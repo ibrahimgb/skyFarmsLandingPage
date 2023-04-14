@@ -9,7 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BlogModule } from './molecules/blog/blog.module';
+import { NotFoundModule } from './molecules/not-found/not-found.module';
 import { HomepageModule } from './pages/homepage/homepage.module';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,6 +23,7 @@ import { HomepageModule } from './pages/homepage/homepage.module';
     AppRoutingModule,
     HomepageModule,
     BrowserAnimationsModule,
+    NotFoundModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

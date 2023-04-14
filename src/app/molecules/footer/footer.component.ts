@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  //faCoffee = faCaretDown;
+  constructor(private router: Router) {}
+
+  navigateTo(link: string): void {
+    this.router.navigate([`/${link}`]);
+    console.log('clicked home');
+  }
 }

@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent {
+  constructor(private router: Router) {}
 
+  navigateTohomepage() {
+    this.router.navigate(['/homepage']);
+    console.log('clicked home');
+  }
 }

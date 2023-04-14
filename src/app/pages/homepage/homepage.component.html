@@ -9,7 +9,7 @@
         We bring Real Local Food Production to people and places that you never
         thought possible before
       </p>
-      <button class="btn">
+      <button class="btn" (click)="navigateTo('blog')">
         <span>Lern More</span>
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
@@ -42,7 +42,7 @@
         and retail spaces with ease. Our coordinators create events and farmers’
         markets for your tenants – you don’t have to lift a finger!
       </p>
-      <button class="btn">
+      <button class="btn" (click)="navigateTo('comingsoon')">
         <span>Contact Us</span>
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
@@ -115,7 +115,7 @@
   <h1>Our Clients</h1>
   <p>
     Have you seen us around town?
-    <span class="light_green">Contact us</span> today to join the vertical
-    farming movement!
+    <a class="light_green" [routerLink]="['/comingsoon']">Contact us</a> today
+    to join the vertical farming movement!
   </p>
 </section>
