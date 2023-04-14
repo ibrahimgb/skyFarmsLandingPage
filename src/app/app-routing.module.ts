@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogComponent } from './molecules/blog/blog.component';
 import { ComingSoonComponent } from './molecules/coming-soon/coming-soon.component';
+import { ContactUsComponent } from './molecules/contact-us/contact-us.component';
 import { NotFoundComponent } from './molecules/not-found/not-found.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
     path: 'comingsoon',
     component: ComingSoonComponent,
   },
+  { path: 'contact', component: ContactUsComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

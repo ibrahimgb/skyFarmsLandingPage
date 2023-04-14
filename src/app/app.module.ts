@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BlogModule } from './molecules/blog/blog.module';
+import { ContactUsModule } from './molecules/contact-us/contact-us.module';
 import { NotFoundModule } from './molecules/not-found/not-found.module';
 import { HomepageModule } from './pages/homepage/homepage.module';
 
@@ -24,6 +25,7 @@ import { HomepageModule } from './pages/homepage/homepage.module';
     HomepageModule,
     BrowserAnimationsModule,
     NotFoundModule,
+    ContactUsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

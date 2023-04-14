@@ -173,6 +173,7 @@ $primary: #5693d5;
   font-weight: 600;
   text-align: center;
   border: 1px solid var($white);
+  backdrop-filter: blur(10px);
 }
 
 .searchInput {
