@@ -1,0 +1,78 @@
+.main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-image: url("/assets/images/bgc.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(125, 125, 125, 0.3),
+      rgba(114, 105, 111, 0.3)
+    ),
+    url("/assets/images/bgc.jpg");
+  .mainbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+    margin: auto;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .err {
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 11rem;
+
+    font-size: 9rem;
+    line-height: 1;
+    font-family: "Arvo", serif;
+    color: rgb(14 62 15);
+    // position: absolute;
+    // left: 20%;
+    // top: 8%;
+  }
+
+  .far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: #ffffff;
+  }
+
+  .msg {
+    text-align: center;
+
+    line-height: 2rem;
+    font-size: 1.6rem;
+    color: rgb(14 62 15/0.7);
+    font-size: 1.3rem;
+    margin: 0;
+    width: 75%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .light_green {
+    color: rgb(124 181 71);
+  }
+
+  p {
+    color: rgb(14 62 15/0.7);
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
