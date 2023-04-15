@@ -61,6 +61,7 @@
   font-size: 1.1rem;
   margin: 1rem;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 .btn:hover {
   background: rgb(124 181 71);
@@ -281,4 +282,63 @@
   justify-content: center;
   flex-direction: column;
   margin: 6rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .main_section {
+    flex-direction: column;
+    .text {
+      width: 80%;
+    }
+    .side_images {
+      width: 80%;
+    }
+  }
+
+  .continer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .context {
+      width: 80%;
+      text-align: center;
+      .right_img {
+        z-index: 4 !important;
+      }
+    }
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+    p {
+      position: relative;
+      z-index: 10 !important;
+      margin: 0;
+      line-height: 1.6rem;
+    }
+  }
+  .section_card {
+    .card {
+      flex-direction: column;
+      margin: 0;
+      .text {
+        p,
+        h1 {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+  .grid_section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .center_text {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+  }
 }
