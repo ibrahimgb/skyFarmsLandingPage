@@ -293,3 +293,13 @@ a:hover {
     flex: 1 1 100%;
   }
 }
+@media only screen and (max-width: 750px) {
+  .padding_4xL {
+    padding: 1rem;
+  }
+  input {
+  }
+  .btn.btn_2 {
+    width: 100px;
+  }
+}
