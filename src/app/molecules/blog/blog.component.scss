@@ -5,14 +5,19 @@
   //width: min(70vw, 100%);
   margin: 0;
   margin-top: 4rem;
+  overflow: hidden;
   .card {
     padding: 2rem;
     padding-right: 0;
+    margin: 0;
     background-color: aliceblue;
     border-radius: 15px 0 0 15px;
+    overflow: hidden;
   }
   img {
-    height: 30rem;
+    height: 27rem;
+    object-fit: cover;
+    max-width: 50%;
   }
 }
 .main {
@@ -79,4 +84,15 @@ p {
   background: rgb(124 181 71);
   color: white;
   transition: all 0.5s ease;
+}
+@media only screen and (max-width: 750px) {
+  .flex_card {
+    flex-direction: column;
+    .card {
+      border-radius: 15px 15px 0 0;
+    }
+    img {
+      max-width: unset;
+    }
+  }
 }
