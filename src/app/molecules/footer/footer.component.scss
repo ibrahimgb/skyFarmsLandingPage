@@ -7,10 +7,6 @@ $primary: #002347;
 $secondary: #000000;
 $main: rgb(14 62 15);
 
-/***************************
-            DEFAULT
-****************************/
-
 a {
   text-decoration: none !important;
   min-width: fit-content;
@@ -42,7 +38,7 @@ fieldset {
 }
 
 .title {
-  color: var($primary);
+  color: $primary;
 }
 
 .flex,
@@ -83,122 +79,44 @@ fieldset {
   text-transform: uppercase;
 }
 
-.btn_1 {
-  border: 1px solid var($primary);
-  background-color: var($primary);
-  color: var($secondary);
-}
-
-.btn_1:hover {
-  background-color: transparent;
-  color: var($primary);
-}
-
 .btn_2 {
-  border: 1px solid var($secondary);
-  background-color: var($secondary);
-  color: var($primary);
+  border: 1px solid $secondary;
+  background-color: $white;
+  color: $primary;
 }
 
 .btn_2:hover {
-  border: 1px solid var($primary);
-  background-color: var($primary);
-  color: var($secondary);
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: $secondary;
 }
 
-@media (max-width: 920px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .padding_1x,
-  .padding_2x,
-  .padding_3x,
-  .padding_4x {
-    padding: 1rem;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-  }
-
-  a,
-  p {
-    font-size: 12px;
-  }
-}
-
-/***************************
-               FOOTER
-****************************/
 footer {
-  background-color: var($main);
-  color: var($lite);
+  color: $lite;
+
+  background-color: $main;
+  h3 {
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: $lite;
+    display: block;
+    margin: 15px 0;
+  }
+  a:hover {
+    color: $white;
+  }
+  fieldset {
+    padding: 0;
+    input {
+      background-color: #334f6c;
+      border: 0;
+      color: $lite;
+      padding: 1rem;
+    }
+  }
 }
-
-footer h3 {
-  color: var($white);
-  margin-bottom: 1.5rem;
-}
-
-footer a {
-  color: var($lite);
-  display: block;
-  margin: 15px 0;
-}
-
-footer a:hover {
-  color: var($white);
-}
-
-footer fieldset {
-  padding: 0;
-}
-
-footer fieldset input {
-  background-color: #334f6c;
-  border: 0;
-  color: var($lite);
-  padding: 1rem;
-}
-
-footer fieldset .btn {
-  border-radius: 0;
-  border: 0;
-}
-
-footer fieldset .btn_2:hover {
-  background-color: var($secondary);
-  border: 0;
-  color: var($primary);
-}
-
-// footer .flex:last-child {
-//   align-items: center;
-// }
-
-// footer .flex:last-child .flex-content:last-child {
-//   text-align: right;
-// }
-
-// footer .flex:last-child p {
-//   color: var($white);
-// }
-
-// footer .flex:last-child a {
-//   width: 40px;
-//   display: inline-block;
-//   background-color: #334f6c;
-//   color: var($white);
-//   padding: 0.5rem;
-//   margin-right: 3px;
-//   text-align: center;
-// }
-
-// footer .flex:last-child a:hover {
-//   background-color: var($secondary);
-//   color: var($gray);
-// }
 
 .flex-items {
   display: flex;
@@ -211,7 +129,6 @@ footer fieldset .btn_2:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50px;
   font-size: 1rem;
   border: none;
@@ -229,12 +146,6 @@ footer fieldset .btn_2:hover {
   color: white;
   transition: all 0.5s ease;
 }
-footer {
-  background-color: rgb(14 62 15);
-}
-
-.folow {
-}
 
 .copyright {
   display: flex;
@@ -243,8 +154,6 @@ footer {
   padding: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  section {
-  }
 }
 h1,
 h2,
@@ -269,6 +178,28 @@ a:hover {
   }
   button {
     border-radius: 0 50px 50px 0 !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .padding_1x,
+  .padding_2x,
+  .padding_3x,
+  .padding_4x {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  a,
+  p {
+    font-size: 12px;
   }
 }
 

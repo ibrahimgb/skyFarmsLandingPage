@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 $white: #fff;
 $primary: #5693d5;
 
@@ -25,68 +21,66 @@ $primary: #5693d5;
 .content {
   width: 70%;
   text-align: center;
-}
+  .logo {
+    width: 13%;
+    position: absolute;
+    top: 1rem;
+    left: 2vw;
+  }
 
-.content .logo {
-  width: 13%;
-  position: absolute;
-  top: 1rem;
-  left: 2vw;
-}
+  h1 {
+    font-size: 4.5em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    color: white;
+    line-height: 4rem;
+  }
 
-.content h1 {
-  font-size: 4.5em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  color: white;
-  line-height: 4rem;
-}
+  h2 {
+    position: relative;
+    top: -30px;
+    font-weight: 200;
+    color: white;
+    margin-top: 2rem;
+  }
 
-.content h2 {
-  position: relative;
-  top: -30px;
-  font-weight: 200;
-  color: white;
-  margin-top: 2rem;
-}
+  .social_icons:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var($white);
+    position: absolute;
+    top: -100%;
+  }
 
-.content .social_icons {
-  position: fixed;
-  right: 2vw;
-  bottom: 2vh;
-}
-
-.content .social_icons:before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: var($white);
-  position: absolute;
-  top: -100%;
-}
-
-.content .social_icons a {
-  margin: 10px 0px;
-  color: var($white);
-  display: block;
-  text-decoration: none;
-  font-size: 1.5em;
-  transition: 0.5s;
-}
-
-.content .social_icons a:hover {
-  color: var($primary);
+  .social_icons {
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    a {
+      margin: 10px 0px;
+      color: var($white);
+      display: block;
+      text-decoration: none;
+      font-size: 1.5em;
+      transition: 0.5s;
+    }
+    a:hover {
+      color: var($primary);
+    }
+  }
 }
 
 .arrow {
   text-align: center;
   margin: 1% 0;
+  .fa {
+    color: var($white);
+    font-weight: 200;
+    text-decoration: none;
+  }
 }
-.arrow .fa {
-  color: var($white);
-  font-weight: 200;
-  text-decoration: none;
-}
+
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
