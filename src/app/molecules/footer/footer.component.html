@@ -5,13 +5,14 @@
       <section class="flex-content padding_1x">
         <h3>Newsletter</h3>
         <p>You can trust us. we only send promo offers,</p>
-        <fieldset class="fixed_flex border-r">
+        <fieldset [formGroup]="emailForm" class="fixed_flex border-r">
           <input
             type="email"
             name="newsletter"
             placeholder="Your Email Address"
+            formControlName="email"
           />
-          <button class="btn btn_2">Subscribe</button>
+          <button class="btn btn_2" (click)="subscribe()">Subscribe</button>
         </fieldset>
       </section>
       <section class="flex-content padding_1x">

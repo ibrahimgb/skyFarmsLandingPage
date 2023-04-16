@@ -41,28 +41,38 @@
           Feel Free to contact us any time. We will get back to you as soon as
           we can!.
         </p>
-        <div class="input">
+        <form [formGroup]="contactUsForm" class="input">
           <input
             type="text"
             class="form-control form-group"
-            placeholder="Name"
+            placeholder="First Name"
+            formControlName="firstName"
+          />
+          <input
+            type="text"
+            class="form-control form-group"
+            placeholder="Last Name"
+            formControlName="lastName"
           />
           <input
             type="text"
             class="form-control form-group"
             placeholder="Email"
+            formControlName="email"
           />
           <input
             type="text"
             class="form-control form-group"
             placeholder="Phone Number"
+            formControlName="phoneNumber"
           />
           <textarea
             class="form-control form-group"
             placeholder="Message"
+            formControlName="message"
           ></textarea>
-        </div>
-        <button class="contact_form_submit">Send</button>
+        </form>
+        <button (click)="submit()" class="contact_form_submit">Send</button>
       </div>
     </div>
   </div>

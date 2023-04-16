@@ -8,11 +8,12 @@ import { NavbarModule } from 'src/app/molecules/navbar/navbar.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
 import { BlogModule } from './molecules/blog/blog.module';
 import { ContactUsModule } from './molecules/contact-us/contact-us.module';
 import { NotFoundModule } from './molecules/not-found/not-found.module';
 import { HomepageModule } from './pages/homepage/homepage.module';
-
+import { SaveDataService } from './save-data.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -26,8 +27,9 @@ import { HomepageModule } from './pages/homepage/homepage.module';
     BrowserAnimationsModule,
     NotFoundModule,
     ContactUsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [SaveDataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

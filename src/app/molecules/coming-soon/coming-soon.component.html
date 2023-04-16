@@ -11,15 +11,16 @@
       <a class="fa fa-arrow-down" href="#"></a>
     </div>
     <section class="button">
-      <div class="searchBox">
+      <div class="searchBox" [formGroup]="emailForm">
         <input
           class="searchInput"
           type="email"
           name=""
           placeholder="Email address*"
           required=""
+          formControlName="email"
         />
-        <button class="searchButton" href="#">Notify Me</button>
+        <button class="searchButton" (click)="subscribe()">Notify Me</button>
       </div>
     </section>
     <section class="social_icons">
