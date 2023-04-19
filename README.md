@@ -1,27 +1,102 @@
-# LandingPage
+# SkyFarms Landing Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Welcome to the SkyFarms Landing Page! This is a website designed to showcase the benefits and features of SkyFarms, a revolutionary new farming technology that allows for sustainable and efficient food production in urban areas.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+SkyFarms offers a number of unique features that make it an ideal solution for urban agriculture:
 
-## Build
+- Vertical farming technology allows for high-density crop production in limited space
+- Automated systems reduce labor costs and increase efficiency
+- Sustainable practices such as water conservation and renewable energy sources are used throughout the process
+- Fresh, locally grown produce can be delivered directly to consumers, reducing transportation costs and emissions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The SkyFarms Landing Page was built using the following technologies:
+
+- HTML
+- vanila CSS
+- SCSS
+- JavaScript
+- Typescript
+- Angular
+- RxJs
+- restful API's
+
+## Installation
+
+To install the SkyFarms Landing Page, simply clone this repository to your local machine:
+
+```
+git clone https://github.com/ibrahimgb/skyfarms.git
+```
+
+## Usage
+
+To use the SkyFarms Landing Page, simply run npm run start file in your web browser. From there, you can navigate through the various sections of the site to learn more about SkyFarms.
+
+## Contributing
+
+If you would like to contribute to the development of the SkyFarms Landing Page, please feel free to submit a pull request with your changes. We welcome contributions from all developers who are interested in helping us improve this project.
+
+## License
+
+The SkyFarms Landing Page is licensed under the MIT License. See `LICENSE` for more information.
+
+
+## ScreenShots
+
+
+
+
+
+![Screenshot 2023-04-19 at 16-43-39 LandingPage](https://user-images.githubusercontent.com/59414164/233132007-7df3e83f-405c-4e40-af55-fec6bb7cade3.png)
+
+
+
+![Screenshot 2023-04-19 at 16-47-14 LandingPage](https://user-images.githubusercontent.com/59414164/233132663-ef790a42-0a29-4212-8335-b777768f0293.png)
+
+
+
+![Screenshot 2023-04-19 at 16-44-32 LandingPage](https://user-images.githubusercontent.com/59414164/233132767-604ae283-fd1c-4a90-82fb-160921072cd1.png)
+
+
+
+
+
+
+
+
+ 
+![Screenshot 2023-04-19 at 16-44-05 LandingPage](https://user-images.githubusercontent.com/59414164/233132391-8f7fe150-156a-48b6-a5ee-1058ebda9939.png)
+
+
+
+
+![Screenshot 2023-04-19 at 16-46-23 LandingPage](https://user-images.githubusercontent.com/59414164/233132455-5231f8b9-2f67-4e59-a6d6-52e4f7c626eb.png)
+
+
+
+
+![Screenshot 2023-04-19 at 16-45-07 LandingPage](https://user-images.githubusercontent.com/59414164/233134389-b9c0e6eb-8f1c-4f4c-bfce-8b2f5667b58b.png)
+
+
+![Screenshot 2023-04-19 at 16-44-52 LandingPage](https://user-images.githubusercontent.com/59414164/233134388-1f50a2b6-e1ed-4b2a-81e0-8d0e02db700c.png)
+
+
+
