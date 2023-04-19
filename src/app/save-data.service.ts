@@ -1,10 +1,13 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SaveDataService {
+  apiUrl: string = environment.domain;
+
   constructor(private http: HttpClient) {}
 
   submitEmail(data: string) {
@@ -16,7 +19,7 @@ export class SaveDataService {
 
     return this.http
       .post(
-        'http://192.168.1.14:3000/landing-page/saveEmail',
+        `${this.apiUrl}/landing-page/saveEmail`,
         { email: data },
         requestOptions
       )

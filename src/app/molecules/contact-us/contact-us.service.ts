@@ -1,9 +1,13 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root',
 })
 export class ContactUsService {
+  apiUrl: string = environment.domain;
+
   constructor(private http: HttpClient) {}
 
   submit(data: object) {
@@ -14,7 +18,7 @@ export class ContactUsService {
     const requestOptions = { headers: headers };
 
     return this.http.post(
-      'http://192.168.1.14:3000/landing-page/saveForm',
+      `${this.apiUrl}/landing-page/saveForm`,
       data,
       requestOptions
     );
